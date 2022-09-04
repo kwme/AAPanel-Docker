@@ -12,6 +12,6 @@ services:
       - "${WEBSERVER_SECURE_HOST_PORT}:443"
       - "${PHPMYADMIN_PORT}:888"
     volumes: 
-      - ${WEBSITE_DATA}:/www/wwwroot
-      - ${MYSQL_DATA}:/www/server/data
-      - ${WEBSITE_LOG}:/www/wwwlogs
+      - ${WEBSITE_DATA}1:/www/wwwroot
+      - ${MYSQL_DATA}1:/www/server/data
+      - ${WEBSITE_LOG}1:/www/wwwlogs
